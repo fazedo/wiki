@@ -19,21 +19,24 @@ def isfemale(pg):
 	if n_mulher_morta>0 or n_mulher_viva>0:
 		return True
 	if n_homem_morto>0 or n_homem_vivo>0:
-		return True
+		return False
 
 
-lista=['Marie Curie', 'Márcia Barbosa', 'Jônathas de Barros Nunes', 'Albert Einstein']
+lista=['Marie Curie']#, 'Márcia Barbosa', 'Jônathas de Barros Nunes', 'Albert Einstein']
 
 for verbete in lista:
 	pg = wikipedia.page(verbete)
 	sumario=pg.summary
+	#print(sumario)
 	print(verbete,isfemale(pg))
 
 
 
 #	print(n_mulher_morta,	n_mulher_viva,	n_homem_morto,	n_homem_vivo)
 
-
+#ofile=open ('verbete.txt','w')
+#ofile.write(pg)
+#ofile.close()
 
 
 

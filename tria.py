@@ -32,6 +32,8 @@ nao_sei=0
 total=0
 texto=''
 
+lista_mulheres=''
+
 for nome in cientistas:
 	posi=nome.find('[[')+3
 	posf=nome.find(' ',posi)
@@ -41,6 +43,7 @@ for nome in cientistas:
 	prenome=nome[posi:posf]
 	if prenome in nomes_femininos:
 		mulheres=mulheres+1
+		lista_mulheres=lista_mulheres+nome
 
 	else:
 		if prenome in nomes_masculinos:
@@ -48,8 +51,8 @@ for nome in cientistas:
 		else:
 			nao_sei=nao_sei+1
 			texto = texto +  nome.strip() + '\n'
-			if prenome[-1]=='a':
-				print prenome
+			#if prenome[-1]=='a':
+			#	print prenome
 	total=total+1			
 	
 	
@@ -61,3 +64,9 @@ print homens+mulheres+nao_sei
 ofile=open('nao_sei.txt','w')
 ofile.write(texto)
 ofile.close()
+
+ofile=open('lista_mulheres_cientistas.txt','w')
+ofile.write(lista_mulheres)
+ofile.close()
+
+
