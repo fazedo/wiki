@@ -1,5 +1,8 @@
 # -*- coding: utf-8 -*-
 
+
+from __future__ import division
+
 #pywikibot
 import pywikibot
 from pywikibot import pagegenerators
@@ -10,6 +13,9 @@ from difflib import SequenceMatcher
 
 #strings:
 import string
+
+#combibations of sets
+import itertools
 
 
 #stackoverflow:begin
@@ -35,88 +41,128 @@ def StripAccents(text):
 #Stackoverflow:end
 
 
-def DecomposeName(Name):
-	pos = Name.find(" ")
-	if pos<0:
-		FirstName = Name
-		return [FirstName, "", ""]
+def CompareNames(Name1, Name2):
+	NameList1 = StripAccents(Name1).split()
+	NameList2 = StripAccents(Name2).split()
 
-	FirstName = Name[:pos]
-	Name = Name[pos+1:]
+	if '(' in NameList1[-1]:
+		NameList1.pop()
 
-	pos=Name.find("(")
-	if pos<0:
-		FamilyName = Name
-		return [FirstName, FamilyName, ""]
+	if '(' in NameList2[-1]:
+		NameList2.pop()
 
-	FamilyName = Name[:pos-1]
-	Complement = Name[pos+1:-1]
+	lenght = min(len(NameList1), len(NameList2))
 
-	return [FirstName, FamilyName, Complement]
+	MaxScore = 0
+	for l in range(2, lenght+1):
+		for Combination1 in itertools.combinations(NameList1, l): 
+			for  Combination2 in itertools.combinations(NameList2, l): 
+				Score = 0
+				MatchedWords = 0
+				for k in range(0, l):			
+					WordScore = SequenceMatcher(None,Combination1[k],Combination2[k]).ratio()
+					if WordScore > .5: #A arbitrary number
+						Score = Score + WordScore
+						MatchedWords = MatchedWords + 1
+				Score = Score -  (lenght - MatchedWords) * 0.7  #A arbitrary penalization factor  
+				MaxScore = max (MaxScore, Score)
+				
+	
+	return MaxScore - abs (len(NameList1) - len(NameList2) ) * 0.2  #A arbitrary penalization factor
 
-#Compare names giving greater weight to first name and disconsidering accents.
-def CompareNames(Name_1, Name_2):
-	NameParts_1=DecomposeName(StripAccents(Name_1))
-	NameParts_2=DecomposeName(StripAccents(Name_2))
-	return (SequenceMatcher(None,NameParts_1[0],NameParts_2[0]).ratio()+SequenceMatcher(None,NameParts_1[1],NameParts_2[1]).ratio())/2.0
 
 
 #Look for articles about someone, treat search suggestions (no ideia how to retrieve them)
 def HasArticle(FullName, KeyWords):
-	total=100 #number of pages we are looking for in Wikipedia
+	total=10 #number of pages we are retrieving from Wikipedia
 	#print (FullName)
 	gen = pagegenerators.SearchPageGenerator(query=FullName, site=site, namespaces=[0], total=total)
-	ArticleList=[]
+	ArticleList = []
+
+	#Redirects = pagegenerators.RedirectFilterPageGenerator(gen, no_redirects=False)
 
 	#Get list of titles and sring distance from FullName 	
 	for Article in gen:
 		ArticleTitle = Article.title()
 		Score = CompareNames(ArticleTitle,FullName)
 		ArticleList.append ((Article, ArticleTitle, Score))
+		#print(ArticleTitle)
 
 	SortedArticleList = sorted (ArticleList, key = lambda ArticleList:-ArticleList[2])
+	#print(SortedArticleList)ret
 
 	#print(ArticleList)
 	if SortedArticleList == []:
 		return False
-	#Set threshold to analyse ArticleText
+
 	BestScore = SortedArticleList [0][2]
-
-	#Magic number
-	Threshold = BestScore * 0.8
-
 	#print (BestScore)
 
+	#Magic number
+	if BestScore < 1.5:
+		return False
+	
+
+	#Set threshold to analyse ArticleText
+	Threshold = BestScore * 0.7 #Another Magic Number
+	
 	for i in range(0,len(ArticleList)):
+		
 		Score = SortedArticleList[i][2]
+		#print(i, Score)
 		if Score<Threshold:
 			break
 		#print(Score)
-		ArticleText=SortedArticleList[i][0].text.lower()
+		ArticleText=StripAccents(SortedArticleList[i][0].text).lower()
 
-	#Must contain at least one keyword
+		#Must contain at least one keyword
 		for key in KeyWords:
-			if key.lower() in ArticleText:
-				return True
-
-
+			if StripAccents(key).lower() in ArticleText:
+				return SortedArticleList[i][0]
+	
 	return False
-
 
 
 site = pywikibot.Site('pt', 'wikipedia')
 
-keywords=["universidade", "pesquisa", "cientista", "física", "química", "matemática", "biolog", "geolog", "botanica"]
+ifile= open("keywords.txt","r")
+lines=ifile.readlines()
+ifile.close()
 
-nome = "Márcia Barbosa"
-nome = "Adriana Neumann"
+#get keywords
+keywords=[]
+for line in lines:
+	key=line.strip()
+	if (not key=='') and (not key[0]=='#'): 
+		keywords.append(key)
 
 
-print(HasArticle(nome, keywords))
+#get list of researchers to look for
+ifile= open("names.txt","r")
+lines=ifile.readlines()
+ifile.close()
 
-i = 0 # esse i é só para não ser eterno aqui
-achou=False
+names=[]
+for line in lines:
+	name=line.strip()
+	if (not name=='') and (not name[0]=='#'): 
+		names.append(name)
+#print (names)
+
+TotalNumberOfArticles=0
+NumberOfExistingArticles=0
+
+for name in names:
+	TotalNumberOfArticles = TotalNumberOfArticles + 1
+	Article = HasArticle (name, keywords) 
+	if Article == False:
+		print (name, "  XXXX")
+	else:
+		print (name, "s",Article.title())
+		NumberOfExistingArticles = NumberOfExistingArticles + 1
+#	if TotalNumberOfArticles > 20:
+#		break
+
+print(NumberOfExistingArticles, TotalNumberOfArticles, str(100 * NumberOfExistingArticles / TotalNumberOfArticles) + "%")
 
 
-#print (i)]
-#print (DecomposeName("Fábio Souto de Azevedo (ff)"))
