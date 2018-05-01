@@ -40,6 +40,8 @@ def NormalizeCreativeBrazilianNames(name):
 	name = name.replace('th','t')
 	name = name.replace('y','i')
 	name = name.replace('z','s')
+	name = name.replace('ka','ca')
+
 
 #	if len(name)>2:
 #		if name [-3:] == 'ele':
@@ -51,7 +53,7 @@ def IsSameName (Name1, Name2):
 	Name1 = NormalizeCreativeBrazilianNames(Name1)
 	Name2 = NormalizeCreativeBrazilianNames(Name2)
 
-	if not Name1[-1] == Name2[-1]:
+	if not Name1[-1] == Name2[-1]: #Let's be conservative here! (eg. Luísa vs Luís)
 		return 0
 
 #	print(Name1,Name2)
@@ -60,8 +62,14 @@ def IsSameName (Name1, Name2):
 	
 
 def IsFemale(nome):
-	prenome = nome.strip().split()[0]
+	prenome = nome.strip().split()[0].lower()
 	
+	#if prenome in ('josé'):
+	#	return False
+
+	#if prenome in ( 'isis'):
+	#	return True
+
 	Male_Score = 0
 	for nome in nomes_masculinos:
 		Male_Score = max(Male_Score, IsSameName (prenome, nome))
@@ -72,10 +80,18 @@ def IsFemale(nome):
 
 #	print(prenome, Male_Score, Female_Score)
 
-	if Male_Score > 0.8 and Female_Score < 0.6:
+	if Male_Score == 1 and not prenome[-1] == nome[-1]: 
 		return False
-	if Male_Score < 0.6 and Female_Score > 0.8:
+
+	if Female_Score == 1 and not prenome[-1] == nome[-1]:
+		return False
+
+	if Male_Score > 0.9 and Female_Score < 0.7:
+		return False
+	if Male_Score < 0.7 and Female_Score > 0.9:
 		return True
+	print(prenome, Male_Score, Female_Score)
+
 	return None
 
  
@@ -110,7 +126,8 @@ for linha in nomes_masculinos_lista:
 
 for name in cientistas:
 	if not name.strip() == '':
-		if IsFemale (name) == None:
-			print(name.strip())	
+		if not name.strip()[0] == '#':
+			if IsFemale (name) == None:
+				print(NormalizeCreativeBrazilianNames(name.strip().split()[0]))	
 
 
