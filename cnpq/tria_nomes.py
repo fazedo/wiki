@@ -107,7 +107,7 @@ ifile = open('nomes_masculinos.txt')
 nomes_masculinos_lista=ifile.readlines()
 ifile.close()
 
-ifile = open('comunicacao.txt')
+ifile = open('bolsistas.txt')
 cientistas=ifile.readlines()
 ifile.close()
 
@@ -137,8 +137,36 @@ for name in cientistas:
 			IsFe = IsFemale (name)
 			if IsFe == None:
 				#print(NormalizeCreativeBrazilianNames(name.strip().split()[0]))	
-				print (name.strip())
-			else:
+#				print (name.strip())
+
+				while True:
+					hm = raw_input("Entre com o gênero de "+name.strip() + ": (m/f/x)" ).lower()
+					if hm == 'm' or hm == 'f' or hm == 'x':
+						break
+				if hm == 'm':
+					IsFe = False
+					prenome = name.strip().split()[0]
+					sn = raw_input("Deseja adicionar " + prenome + " à lista de nomes masculinos? " ).lower()
+					if sn =='s':
+						ofile = open('nomes_masculinos.txt','a')
+						ofile.write('\n'+prenome)					
+						ofile.close()
+						nomes_masculinos.append(prenome)		
+				
+
+				if hm == 'f':
+					IsFe = True
+					prenome = name.strip().split()[0]
+					sn = raw_input("Deseja adicionar " + prenome + " à lista de nomes femininos? " ).lower()
+					if sn =='s':
+						ofile = open('nomes_femininos.txt','a')
+						ofile.write('\n'+prenome)					
+						ofile.close()
+						nomes_femininos.append(prenome)		
+
+
+			if not IsFe == None:
+
 				if IsFe:
 					lista_femininos = lista_femininos + name.strip()+'\n'
 				else:

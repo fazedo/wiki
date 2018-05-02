@@ -138,7 +138,7 @@ for line in lines:
 
 
 #get list of researchers to look for
-ifile= open("farmacia.txt","r")
+ifile= open("lista_masculinos.txt","r")
 lines=ifile.readlines()
 ifile.close()
 
