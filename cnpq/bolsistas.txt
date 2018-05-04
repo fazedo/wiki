@@ -5813,7 +5813,7 @@ Karla Maria Damiano Teixeira
 Acacia Zeneida Kuenzer
 Adair Mendes Nacarato
 Ademir José Rosso
-Adolfo Ignacio Calderón
+Adolfo Ignacio Calderón Flores
 Afrânio Mendes Catani
 Alceu Ravanello Ferraro
 Alessandra Arce Hai
@@ -8226,6 +8226,7 @@ José Geraldo Barbosa
 José Guilherme Marinho Guerra
 Jose Helio Costa
 José Lavres Junior
+Jose Luiz Bezerra
 Jose Luiz Rodrigues Torres
 José Luiz Sandes de Carvalho Filho
 José Magno Queiroz Luz
@@ -13569,6 +13570,7 @@ Ivan Luiz Brondani
 Ivanor Nunes do Prado
 Ives Cláudio da Silva Bueno
 Ivone Yurika Mizubuti
+Izabelle Auxiliadora Molina de Almeida Teixeira
 Jaime Araujo Cobuci
 Jayme Aparecido Povh
 Joanir Pereira Eler

@@ -138,7 +138,7 @@ for line in lines:
 
 
 #get list of researchers to look for
-ifile= open("lista_masculinos.txt","r")
+ifile= open("bolsistas.txt","r")
 lines=ifile.readlines()
 ifile.close()
 
@@ -160,6 +160,9 @@ for name in names:
 	else:
 		print (name, "s",Article.title())
 		NumberOfExistingArticles = NumberOfExistingArticles + 1
+
+	print(NumberOfExistingArticles, TotalNumberOfArticles, str(100 * NumberOfExistingArticles / TotalNumberOfArticles) + "%")
+
 #	if TotalNumberOfArticles > 20:
 #		break
 
