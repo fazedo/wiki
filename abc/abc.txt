@@ -1,0 +1,210 @@
+#[[Ado Jorio]], [[Ado Jório de Vasconcelos]],  [[Ciências Físicas]], M
+#[[Carlos Costa (Economista)]], [[José Carlos Costa da Silva Pinto]],  [[Ciências da Engenharia]], M
+#[[Otávio Velho]], [[Otávio Guilherme Cardoso Alves Velho]],  [[Ciências Sociais]], M
+#[[Marcos Soares (Político)]], [[Pedro Marcos Gomes Soares]],  [[Ciências Biomédicas]], M
+#[[Márcia Barbosa]], [[Marcia Cristina Bernardes Barbosa]],  [[Ciências Físicas]], F
+#[[Marcos Vinícius (Lutador)]], [[Marcos Vinicius Borges Teixeira Lima]],  [[Ciências Físicas]], M
+#[[Carlos Nobre (Cientista)]], [[Carlos Afonso Nobre]],  [[Ciências da Terra]], M
+#[[Artur Avila]], [[Artur Avila Cordeiro de Melo]],  [[Ciências Matemáticas]], M
+#[[José Marengo]], [[Jose Antonio Marengo Orsini]],  [[Ciências da Terra]], M
+#[[Paulo Saldiva]], [[Paulo Hilário Nascimento Saldiva]],  [[Ciências da Saúde]], M
+#[[Robert Morris (Matemático)]], [[Robert David Morris]],  [[Ciências Matemáticas]], M
+#[[Costa E Silva]], [[Fernando Costa e Silva Filho]],  [[Ciências Biomédicas]], M
+#[[Chintamani Rao]], [[Chintamani Nagesa Ramachandra Rao]],  [[Ciências Químicas]], M
+#[[Marcelo Viana]], [[Marcelo Miranda Viana da Silva]],  [[Ciências Matemáticas]], M
+#[[Sergio Miceli]], [[Sergio Miceli Pessôa de Barros]],  [[Ciências Sociais]], M
+#[[Fernando Gomes (Político)]], [[João Fernando Gomes de Oliveira]],  [[Ciências da Engenharia]], M
+#[[António Cordeiro (Ator)]], [[Antônio Rodrigues Cordeiro]],  [[Ciências Biológicas]], M
+#[[Ângelo Machado]], [[Ângelo Barbosa Monteiro Machado]],  [[Ciências Biológicas]], M
+#[[Sérgio Pena]], [[Sérgio Danilo Junho Pena]],  [[Ciências da Saúde]], M
+#[[Paulo Artaxo]], [[Paulo Eduardo Artaxo Netto]],  [[Ciências da Terra]], M
+#[[Celina Turchi]], [[Celina Maria Turchi Martelli]],  [[Ciências da Saúde]], F
+#[[Ludvig Faddeev]], [[Ludwig Dmitrievich Faddeev]],  [[Ciências Físicas]], M
+#[[Helgio Trindade]], [[Helgio Henrique Casses Trindade]],  [[Ciências Sociais]], M
+#[[Fernando Codá Marques]], [[Fernando Codá dos Santos Cavalcanti Marques]],  [[Ciências Matemáticas]], M
+#[[António Teixeira]], [[Antônio Sérgio Teixeira Pires]],  [[Ciências Físicas]], M
+#[[Ricardo Galvão]], [[Ricardo Magnus Osório Galvão]],  [[Ciências Físicas]], M
+#[[Miguel Nicolelis]], [[Miguel Ângelo Laporta Nicolelis]],  [[Ciências Biomédicas]], M
+#[[Sóstenes Lins]], [[Sóstenes Luiz Soares Lins]],  [[Ciências Matemáticas]], M
+#[[António Garcia]], [[Antonio García García]],  [[Ciências Químicas]], M
+#[[George Simpson]], [[Andrew John George Simpson]],  [[Ciências Biológicas]], M
+#[[Arnaldo Garcia]], [[Arnaldo Leite Pinto Garcia]],  [[Ciências Matemáticas]], M
+#[[Alexander Kellner]], [[Alexander Wilhelm Armin Kellner]],  [[Ciências da Terra]], M
+#[[Roberto Salmeron]], [[Roberto Aureliano Salmerón]],  [[Ciências Físicas]], M
+#[[Ivan Izquierdo]], [[Iván Antonio Izquierdo]],  [[Ciências Biomédicas]], M
+#[[João Santana]], [[João Santana da Silva]],  [[Ciências Biomédicas]], M
+#[[Roberto Damatta]], [[Roberto Augusto DaMatta]],  [[Ciências Sociais]], M
+#[[Francisco Barreto]], [[Francisco César de Sá Barreto]],  [[Ciências Físicas]], M
+#[[César Camacho]], [[César Leopoldo Camacho]],  [[Ciências Matemáticas]], M
+#[[Manfredo Do Carmo]], [[Manfredo Perdigão do Carmo]],  [[Ciências Matemáticas]], M
+#[[Carlos Gustavo Moreira]], [[Carlos Gustavo Tamm de Araujo Moreira]],  [[Ciências Matemáticas]], M
+#[[Carlos Morel]], [[Carlos Medicis Morel]],  [[Ciências Biomédicas]], M
+#[[Peter Fry]], [[Peter Henry Fry]],  [[Ciências Sociais]], M
+#[[Warwick Kerr]], [[Warwick Estevam Kerr]],  [[Ciências Agrárias]], M
+#[[Edmar Bacha]], [[Edmar Lisboa Bacha]],  [[Ciências Sociais]], M
+#[[Jacob Palis]], [[Jacob Palis Junior]],  [[Ciências Matemáticas]], M
+#[[John Mather]], [[John Norman Mather]],  [[Ciências Matemáticas]], M
+#[[Manuela Carneiro Da Cunha]], [[Maria Manuela Ligeti Carneiro da Cunha]],  [[Ciências Sociais]], F
+#[[Ruben Oliven]], [[Ruben George Oliven]],  [[Ciências Sociais]], M
+#[[Charles Newman]], [[Charles Michael Newman]],  [[Ciências Matemáticas]], M
+#[[Célio Silva]], [[Célio Lopes Silva]],  [[Ciências Biomédicas]], M
+#[[James Heckman]], [[James Joseph Heckman]],  [[Ciências Sociais]], M
+#[[Dennis Sullivan]], [[Dennis Parnell Sullivan]],  [[Ciências Matemáticas]], M
+#[[António Teixeira]], [[Marco Antônio Teixeira]],  [[Ciências Matemáticas]], M
+#[[Vanderlan Bolzani]], [[Vanderlan da Silva Bolzani]],  [[Ciências Químicas]], F
+#[[John Randall]], [[David John Randall]],  [[Ciências Biológicas]], M
+#[[Enrique Pujals]], [[Enrique Ramiro Pujals]],  [[Ciências Matemáticas]], M
+#[[José Mindlin]], [[José Ephim Mindlin]],  [[Ciências Matemáticas]], M
+#[[Eloisa Biassoto]], [[Eloisa Biasotto Mano]],  [[Ciências Químicas]], F
+#[[Cesar Victora]], [[Cesar Gomes Victora]],  [[Ciências da Saúde]], M
+#[[Clifford Truesdell]], [[Clifford Ambrose Truesdell]],  [[Ciências Físicas]], M
+#[[Philip Fearnside]], [[Philip Martin Fearnside]],  [[Ciências Biológicas]], M
+#[[Michael Fisher]], [[Michael Ellis Fisher]],  [[Ciências Físicas]], M
+#[[Othon Leonardos]], [[Othon Henry Leonardos]],  [[Ciências da Terra]], M
+#[[Ricardo Gazzinelli]], [[Ricardo Tostes Gazzinelli]],  [[Ciências Biomédicas]], M
+#[[Maurício Peixoto]], [[Maurício Matos Peixoto]],  [[Ciências Matemáticas]], M
+#[[Nathan Berkovits]], [[Nathan Jacob Berkovits]],  [[Ciências Físicas]], M
+#[[José Chaves Ribeiro]], [[José Marcos Chaves Ribeiro]],  [[Ciências Biomédicas]], M
+#[[Mário Marques]], [[Maria Marques]],  [[Ciências Biomédicas]], F
+#[[Kepler De Souza Oliveira]], [[Kepler de Souza Oliveira Filho]],  [[Ciências Físicas]], M
+#[[François Treves]], [[Jean-François Treves]],  [[Ciências Matemáticas]], M
+#[[Jorge Sotomayor Tello]], [[Jorge Manuel Sotomayor Tello]],  [[Ciências Matemáticas]], M
+#[[Eduardo Krieger]], [[José Eduardo Krieger]],  [[Ciências da Saúde]], M
+#[[Russell Mittermeier]], [[Russell Alan Mittermeier]],  [[Ciências da Terra]], M
+#[[James Marshall]], [[James A. Marshall]],  [[Ciências Químicas]], M
+#[[Giuliano Ferreira]], [[Juliano Ferreira]],  [[Ciências Biológicas]], M
+#[[Mauricio Rocha E Silva]], [[Maurício Rocha e Silva]],  [[Ciências Biomédicas]], M
+#[[Laura De Mello E Souza]], [[Laura de Mello e Souza]],  [[Ciências Sociais]], F
+#[[Herbert Blaine Lawson]], [[Herbert Blaine Lawson Jr.]],  [[Ciências Matemáticas]], M
+#[[Sheldon Newhouse]], [[Sheldon E. Newhouse]],  [[Ciências Matemáticas]], M
+#[[Diógenes De Almeida Campos]], [[Diogenes de Almeida Campos]],  [[Ciências da Terra]], M
+#[[Tércio Ambrizzi]], [[Tercio Ambrizzi]],  [[Ciências da Terra]], M
+#[[Celso José Da Costa]], [[Celso José da Costa]],  [[Ciências Matemáticas]], M
+#[[Celso Pinto De Melo]], [[Celso Pinto de Melo]],  [[Ciências Físicas]], M
+#[[Gil Da Costa Marques]], [[Gil da Costa Marques]],  [[Ciências Físicas]], M
+#[[Clóvis Caesar Gonzaga]], [[Clovis Caesar Gonzaga]],  [[Ciências Matemáticas]], M
+#[[João Lúcio De Azevedo]], [[João Lúcio de Azevedo]],  [[Ciências Agrárias]], M
+#[[Ricardo Paes De Barros]], [[Ricardo Paes de Barros]],  [[Ciências Sociais]], M
+#[[Sérgio Machado Rezende]], [[Sergio Machado Rezende]],  [[Ciências Físicas]], M
+#[[Daniel Martins-De-Souza]], [[Daniel Martins-de-Souza]],  [[Ciências Biomédicas]], M
+#[[José Murilo De Carvalho]], [[José Murilo de Carvalho]],  [[Ciências Sociais]], M
+#[[Antonio Paes De Carvalho]], [[Antonio Paes de Carvalho]],  [[Ciências Biomédicas]], M
+#[[Fernando De Souza Barros]], [[Fernando de Souza Barros]],  [[Ciências Físicas]], M
+#[[Samuel Wallace Macdowell]], [[Samuel Wallace MacDowell]],  [[Ciências Físicas]], M
+#[[Fernando Claudio Zawislak]], [[Fernando Cláudio Zawislak]],  [[Ciências Físicas]], M
+#[[Bruce Alberts]], [[Bruce Alberts ]],  [[Ciências Biomédicas]], M
+#[[Djairo Guedes De Figueiredo]], [[Djairo Guedes de Figueiredo]],  [[Ciências Matemáticas]], M
+#[[Carlos Henrique De Brito Cruz]], [[Carlos Henrique de Brito Cruz]],  [[Ciências Físicas]], M
+#[[Sérgio Mascarenhas De Oliveira]], [[Sérgio Mascarenhas de Oliveira]],  [[Ciências Físicas]], M
+#[[Wanderley Guilherme Dos Santos]], [[Wanderley Guilherme dos Santos]],  [[Ciências Sociais]], M
+#[[Roberto Leal Lobo E Silva Filho]], [[Roberto Leal Lobo e Silva Filho]],  [[Ciências Físicas]], M
+#[[Alfredo Miguel Ozorio De Almeida]], [[Alfredo Miguel Ozorio de Almeida]],  [[Ciências Físicas]], M
+#[[Giorgio Eugenio Oscare Giacaglia]], [[Giorgio Eugênio Oscare Giacaglia]],  [[Ciências Físicas]], M
+#[[Marco Antonio Chaer Do Nascimento]], [[Marco Antonio Chaer do Nascimento]],  [[Ciências Químicas]], M
+#[[Fernando Antonio Figueiredo Cardoso Da Silva]], [[Fernando Antonio Figueiredo Cardoso da Silva]],  [[Ciências Matemáticas]], M
+#[[Abramo Hefez]], [[Abramo Hefez]],  [[Ciências Matemáticas]], M
+#[[Adalberto Fazzio]], [[Adalberto Fazzio]],  [[Ciências Físicas]], M
+#[[Adriano Nunes Nesi]], [[Adriano Nunes Nesi]],  [[Ciências Agrárias]], M
+#[[Alaor Silvério Chaves]], [[Alaor Silvério Chaves]],  [[Ciências Físicas]], M
+#[[Albert Fishlow]], [[Albert Fishlow]],  [[Ciências Sociais]], M
+#[[Alberto Passos Guimarães Filho]], [[Alberto Passos Guimarães Filho]],  [[Ciências Físicas]], M
+#[[Alcides Nóbrega Sial]], [[Alcides Nóbrega Sial]],  [[Ciências da Terra]], M
+#[[Alfredo Noel Iusem]], [[Alfredo Noel Iusem]],  [[Ciências Matemáticas]], M
+#[[Alvaro Toubes Prata]], [[Alvaro Toubes Prata]],  [[Ciências da Engenharia]], M
+#[[Amir Ordacgi Caldeira]], [[Amir Ordacgi Caldeira]],  [[Ciências Físicas]], M
+#[[Anibal Eugenio Vercesi]], [[Anibal Eugenio Vercesi]],  [[Ciências Biológicas]], M
+#[[Antonio Galves]], [[Antonio Galves]],  [[Ciências Matemáticas]], M
+#[[Aron Simis]], [[Aron Simis]],  [[Ciências Matemáticas]], M
+#[[Artur Oscar Lopes]], [[Artur Oscar Lopes]],  [[Ciências Matemáticas]], M
+#[[Bolívar Lamounier]], [[Bolívar Lamounier]],  [[Ciências Sociais]], M
+#[[Boris Fausto]], [[Boris Fausto]],  [[Ciências Sociais]], M
+#[[Carlos Alexandre Netto]], [[Carlos Alexandre Netto]],  [[Ciências Biológicas]], M
+#[[Celso Grebogi]], [[Celso Grebogi]],  [[Ciências Físicas]], M
+#[[Celso Lafer]], [[Celso Lafer]],  [[Ciências Sociais]], M
+#[[Chaim Samuel Hönig]], [[Chaim Samuel Hönig]],  [[Ciências Matemáticas]], M
+#[[Charles Chapman Pugh]], [[Charles Chapman Pugh]],  [[Ciências Matemáticas]], M
+#[[Chen Ning Yang]], [[Chen Ning Yang]],  [[Ciências Físicas]], M
+#[[Claude Cohen-Tannoudji]], [[Claude Cohen-Tannoudji]],  [[Ciências Físicas]], M
+#[[Cláudio Costa Neto]], [[Cláudio Costa Neto]],  [[Ciências Químicas]], M
+#[[Claudio Landim]], [[Claudio Landim]],  [[Ciências Matemáticas]], M
+#[[Constantino Tsallis]], [[Constantino Tsallis]],  [[Ciências Físicas]], M
+#[[Eduardo Moacyr Krieger]], [[Eduardo Moacyr Krieger]],  [[Ciências Biomédicas]], M
+#[[Efim Zelmanov]], [[Efim Zelmanov]],  [[Ciências Matemáticas]], M
+#[[Elcio Abdalla]], [[Elcio Abdalla]],  [[Ciências Físicas]], M
+#[[Elon Lages Lima]], [[Elon Lages Lima]],  [[Ciências Matemáticas]], M
+#[[Ernst Wolfgang Hamburger]], [[Ernst Wolfgang Hamburger]],  [[Ciências Físicas]], M
+#[[Étienne Ghys]], [[Étienne Ghys]],  [[Ciências Matemáticas]], M
+#[[Fernando Ferreira Costa]], [[Fernando Ferreira Costa]],  [[Ciências da Saúde]], M
+#[[Fernando Galembeck]], [[Fernando Galembeck]],  [[Ciências Químicas]], M
+#[[Floris Takens]], [[Floris Takens]],  [[Ciências Matemáticas]], M
+#[[Francisco Mauro Salzano]], [[Francisco Mauro Salzano]],  [[Ciências Biológicas]], M
+#[[Giovanni Gazzinelli]], [[Giovanni Gazzinelli]],  [[Ciências Biomédicas]], M
+#[[Glaucius Oliva]], [[Glaucius Oliva]],  [[Ciências Biomédicas]], M
+#[[Harold Rosenberg]], [[Harold Rosenberg]],  [[Ciências Matemáticas]], M
+#[[Harry Eugene Stanley]], [[Harry Eugene Stanley]],  [[Ciências Físicas]], M
+#[[Henrique Fleming]], [[Henrique Fleming]],  [[Ciências Físicas]], M
+#[[Herch Moysés Nussenzveig]], [[Herch Moysés Nussenzveig]],  [[Ciências Físicas]], M
+#[[Israel Vainsencher]], [[Israel Vainsencher]],  [[Ciências Matemáticas]], M
+#[[Jairton Dupont]], [[Jairton Dupont]],  [[Ciências Químicas]], M
+#[[Jayme Luiz Szwarcfiter]], [[Jayme Luiz Szwarcfiter]],  [[Ciências da Engenharia]], M
+#[[Jefferson Cardia Simões]], [[Jefferson Cardia Simões]],  [[Ciências da Terra]], M
+#[[John Campbell Brown]], [[John Campbell Brown]],  [[Ciências Físicas]], M
+#[[John Marius Opitz]], [[John Marius Opitz]],  [[Ciências Biológicas]], M
+#[[Jorge Almeida Guimarães]], [[Jorge Almeida Guimarães]],  [[Ciências Biomédicas]], M
+#[[José Felipe Voloch]], [[José Felipe Voloch]],  [[Ciências Matemáticas]], M
+#[[José Galizia Tundisi]], [[José Galizia Tundisi]],  [[Ciências Biológicas]], M
+#[[José Goldemberg]], [[José Goldemberg]],  [[Ciências Físicas]], M
+#[[José Israel Vargas]], [[José Israel Vargas]],  [[Ciências Físicas]], M
+#[[José Manuel Riveros Nigra]], [[José Manuel Riveros Nigra]],  [[Ciências Químicas]], M
+#[[Julio Cezar Melatti]], [[Julio Cezar Melatti]],  [[Ciências Sociais]], M
+#[[Klaus Hafner]], [[Klaus Hafner]],  [[Ciências Químicas]], M
+#[[Kurt Wüthrich]], [[Kurt Wüthrich]],  [[Ciências Biomédicas]], M
+#[[Leslie Bethell]], [[Leslie Bethell]],  [[Ciências Sociais]], M
+#[[Luiz Bevilacqua]], [[Luiz Bevilacqua]],  [[Ciências da Engenharia]], M
+#[[Luiz Carlos Dias]], [[Luiz Carlos Dias]],  [[Ciências Químicas]], M
+#[[Luiz Davidovich]], [[Luiz Davidovich]],  [[Ciências Físicas]], M
+#[[Luiz Pinguelli Rosa]], [[Luiz Pinguelli Rosa]],  [[Ciências da Engenharia]], M
+#[[Manassés Claudino Fonteles]], [[Manassés Claudino Fonteles]],  [[Ciências Biomédicas]], M
+#[[Manuel Mateus Ventura]], [[Manuel Mateus Ventura]],  [[Ciências Químicas]], M
+#[[Marc Van Montagu]], [[Marc Van Montagu]],  [[Ciências Agrárias]], M
+#[[Marco Antonio Zago]], [[Marco Antonio Zago]],  [[Ciências da Saúde]], M
+#[[Marco-Aurelio De Paoli]], [[Marco-Aurelio De Paoli]],  [[Ciências Químicas]], M
+#[[Marcos Dajczer]], [[Marcos Dajczer]],  [[Ciências Matemáticas]], M
+#[[Marcos Nogueira Eberlin]], [[Marcos Nogueira Eberlin]],  [[Ciências Químicas]], M
+#[[Michel Claudio Nussenzweig]], [[Michel Claudio Nussenzweig]],  [[Ciências Biomédicas]], M
+#[[Mikhail Lyubich]], [[Mikhail Lyubich]],  [[Ciências Matemáticas]], M
+#[[Mortimer Mishkin]], [[Mortimer Mishkin]],  [[Ciências Biológicas]], M
+#[[Nelson Maculan Filho]], [[Nelson Maculan Filho]],  [[Ciências da Engenharia]], M
+#[[Nivio Ziviani]], [[Nivio Ziviani]],  [[Ciências da Engenharia]], M
+#[[Paul Alexander Schweitzer]], [[Paul Alexander Schweitzer]],  [[Ciências Matemáticas]], M
+#[[Paulo Arruda]], [[Paulo Arruda]],  [[Ciências Agrárias]], M
+#[[Paulo Ribenboim]], [[Paulo Ribenboim]],  [[Ciências Matemáticas]], M
+#[[Paulo Sérgio Pinheiro]], [[Paulo Sérgio Pinheiro]],  [[Ciências Sociais]], M
+#[[Peter H. Raven]], [[Peter H. Raven]],  [[Ciências Biológicas]], M
+#[[Pierre-Louis Lions]], [[Pierre-Louis Lions]],  [[Ciências Matemáticas]], M
+#[[Ramayana Gazzinelli]], [[Ramayana Gazzinelli]],  [[Ciências Físicas]], M
+#[[Raulino Reitz]], [[Raulino Reitz]],  [[Ciências Matemáticas]], M
+#[[Richard Williams]], [[Richard Williams]],  [[Ciências Físicas]], M
+#[[Roberto Giugliani]], [[Roberto Giugliani]],  [[Ciências da Saúde]], M
+#[[Ronaldo Aloise Pilli]], [[Ronaldo Aloise Pilli]],  [[Ciências Químicas]], M
+#[[Serge Haroche]], [[Serge Haroche]],  [[Ciências Físicas]], M
+#[[Setembrino Petri]], [[Setembrino Petri]],  [[Ciências da Terra]], M
+#[[Simon Schwartzman]], [[Simon Schwartzman]],  [[Ciências Sociais]], M
+#[[Stephen Smale]], [[Stephen Smale]],  [[Ciências Matemáticas]], M
+#[[Takeshi Kodama]], [[Takeshi Kodama]],  [[Ciências Físicas]], M
+#[[Vanderlei Salvador Bagnato]], [[Vanderlei Salvador Bagnato]],  [[Ciências Físicas]], M
+#[[Walter Arno Mannheimer]], [[Walter Arno Mannheimer]],  [[Ciências da Engenharia]], M
+#[[Walter Colli]], [[Walter Colli]],  [[Ciências Biomédicas]], M
+#[[Yoshiharu Kohayakawa]], [[Yoshiharu Kohayakawa]],  [[Ciências Matemáticas]], M
+#[[Anita Dolly Panek]], [[Anita Dolly Panek]],  [[Ciências Biomédicas]], F
+#[[Belita Koiller]], [[Belita Koiller]],  [[Ciências Físicas]], F
+#[[Carolina Horta Andrade]], [[Carolina Horta Andrade]],  [[Ciências Químicas]], F
+#[[Johanna Döbereiner]], [[Johanna Döbereiner]],  [[Ciências Agrárias]], F
+#[[Keti Tenenblat]], [[Keti Tenenblat]],  [[Ciências Matemáticas]], F
+#[[Lucia Mendonça Previato]], [[Lucia Mendonça Previato]],  [[Ciências Biomédicas]], F
+#[[Mayana Zatz]], [[Mayana Zatz]],  [[Ciências Biológicas]], F
+#[[Miriani Griselda Pastoriza]], [[Miriani Griselda Pastoriza]],  [[Ciências Físicas]], F
+#[[Nicole Marthe Le Douarin]], [[Nicole Marthe Le Douarin]],  [[Ciências Biológicas]], F
+#[[Ruth Sonntag Nussenzweig]], [[Ruth Sonntag Nussenzweig]],  [[Ciências Biomédicas]], F
+#[[Thaisa Storchi Bergmann]], [[Thaisa Storchi Bergmann]],  [[Ciências Físicas]], F
+

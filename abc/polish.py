@@ -179,7 +179,7 @@ def parse(gender):
 		else:
 			print (name, "s",Article.title())
 #			NumberOfExistingArticles = NumberOfExistingArticles + 1
-			ArticleName = Article.title()
+			ArticleName = Article
 
 
 
@@ -188,6 +188,8 @@ def parse(gender):
 
 
 site = pywikibot.Site('pt', 'wikipedia')
+
+
 
 NewTable=[]
 ifile = open('lista_abc_masculino.json', 'r')
