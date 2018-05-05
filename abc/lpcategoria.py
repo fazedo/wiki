@@ -9,51 +9,51 @@ table = []
 number = 0
 
 k=0
-for genero in ['Masculino', 'Feminino']:
-	for categoria in ['Afiliado', 'Associado', 'Colaborador', 'Correspondente', 'Titular']:
-		print(genero, categoria)
-		while True: 
-			pagina = 'http://www.abc.org.br/?page=buscaAcademico&id_rubrique=95&titre=&genero='+genero+'&especializacao=&categoria='+categoria+'&debut_Resultado='+str(k)+'#pagination_Resultado'
-			k=k+10
-			page = urllib.request.urlopen(pagina)
-			Text = str(page.read().decode("utf-8"))
+for categoria in ['Afiliado', 'Associado', 'Colaborador', 'Correspondente', 'Titular']:
+	print(categoria)
+	while True: 
+		print (k)
+		pagina = 'http://www.abc.org.br/?page=buscaAcademico&id_rubrique=95&titre=&especializacao=&categoria='+categoria+'&debut_Resultado='+str(k)+'#pagination_Resultado'
+		k=k+10
+		page = urllib.request.urlopen(pagina)
+		Text = str(page.read().decode("utf-8"))
 
-			while True:
-				pos = Text.find('<li dir="ltr" class="hentry clearfix text-left">')
-				if pos<0:
-					break
-				Text =  Text[pos:]
+		while True:
+			pos = Text.find('<li dir="ltr" class="hentry clearfix text-left">')
+			if pos<0:
+				break
+			Text =  Text[pos:]
 
-				pos =  Text.find('href="./?')
-				Text =  Text[pos+9:]
-				pos = Text.find('">')
-				link = Text[:pos]
+			pos =  Text.find('href="./?')
+			Text =  Text[pos+9:]
+			pos = Text.find('">')
+			link = Text[:pos]
 
-				pos = Text.find('/>')
-				Text = Text[pos+3:]
-				pos = Text.find('</a>')
-				name = Text[:pos]
+			pos = Text.find('/>')
+			Text = Text[pos+3:]
+			pos = Text.find('</a>')
+			name = Text[:pos]
 
-				pos = Text.find('<small>')
-				Text = Text[pos+7:]
-				pos = Text.find('</small>')
-				birth = Text[:pos]
+			pos = Text.find('<small>')
+			Text = Text[pos+7:]
+			pos = Text.find('</small>')
+			birth = Text[:pos]
 
-				pos = Text.find('<b>')
-				Text = Text[pos+3:]
-				pos = Text.find('</b>')
-				field = Text[:pos]
+			pos = Text.find('<b>')
+			Text = Text[pos+3:]
+			pos = Text.find('</b>')
+			field = Text[:pos]
 
-				pos = Text.find('</b>')
-				Text = Text[pos+6:]
-				pos = Text.find('</small>')
-				obs = Text[:pos]
+			pos = Text.find('</b>')
+			Text = Text[pos+6:]
+			pos = Text.find('</small>')
+			obs = Text[:pos]
 
-				number = number + 1
-				print(name, link, birth, field, obs)
-			table.append([number, name, link, birth, field, obs, categoria])
-			if not 'debut_Resultado=' + str(k) in Text:
-				break			
+			number = number + 1
+			print(name)
+		table.append([name, categoria])
+		if not 'debut_Resultado=' + str(k) in Text:
+			break			
 
 
 
