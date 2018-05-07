@@ -13,44 +13,52 @@ for k in range(0,851,10): #141 para F
 
 	page = urllib.request.urlopen(pagina)
 	Text = str(page.read().decode("utf-8"))
-
+	num=0
 	while True:
 		pos = Text.find('<li dir="ltr" class="hentry clearfix text-left">')
 		if pos<0:
 			break
+		num = num +1
 		Text =  Text[pos:]
 
-		pos =  Text.find('href="./?')
-		Text =  Text[pos+9:]
-		pos = Text.find('">')
-		link = Text[:pos]
+		pos = Text.find('clear="all"')
+		Text2 = Text
+		Text = Text[pos:]
 
-		pos = Text.find('/>')
-		Text = Text[pos+3:]
-		pos = Text.find('</a>')
-		name = Text[:pos]
+		pos =  Text2.find('href="./?')
+		Text2 =  Text2[pos+9:]
+		pos = Text2.find('">')
+		link = Text2[:pos]
 
-		pos = Text.find('<small>')
-		Text = Text[pos+7:]
-		pos = Text.find('</small>')
-		birth = Text[:pos]
+		pos = Text2.find('/>')
+		Text2 = Text2[pos+3:]
+		pos = Text2.find('</a>')
+		name = Text2[:pos]
 
-		pos = Text.find('<b>')
-		Text = Text[pos+3:]
-		pos = Text.find('</b>')
-		field = Text[:pos]
+		pos = Text2.find('<small>')
+		Text2 = Text2[pos+7:]
+		pos = Text2.find('</small>')
+		birth = Text2[:pos]
 
-		pos = Text.find('</b>')
-		Text = Text[pos+6:]
-		pos = Text.find('</small>')
-		obs = Text[:pos]
+		pos = Text2.find('<b>')
+		Text2 = Text2[pos+3:]
+		pos = Text2.find('</b>')
+		field = Text2[:pos]
+
+		pos = Text2.find('</b>')
+		Text2 = Text2[pos+6:]
+		pos = Text2.find('</small>')
+		obs = Text2[:pos]
 
 		number = number + 1
-		print(name, link, birth, field, obs)
+		print(num, name, link, birth, field, obs)
 		table.append([number, name, link, birth, field, obs])
+	if num<10:
+		print (k)
+		break
 
 
-
+print (number)
 
 ofile = open('lista_abc_masculino.json', 'w')
 json.dump(table, ofile)

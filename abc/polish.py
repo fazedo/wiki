@@ -172,7 +172,7 @@ def parse(gender):
 			ano = 0
 			birth = None
 
-		Article = HasArticle (name) 
+		Article = name #HasArticle (name) ############## 
 		if Article == False:
 			print (name, "  XXXX")
 			ArticleName = 'X'
@@ -204,9 +204,10 @@ ifile.close()
 parse('F')
 
 
+print (len(NewTable))
 
 #print(NewTable)
-
+quit()
 ofile=open('tabela_com_sugestoes.json','w')
 json.dump(NewTable, ofile)
 ofile.close()
