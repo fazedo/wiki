@@ -8,8 +8,8 @@ meses = {'jan':1, 'fev':2, 'mar':3, 'abr':4, 'mai':5, 'jun':6, 'jul':7, 'ago':8,
 table = []
 number = 0
 
-#genero = 'Feminino'
-genero = 'Masculino'
+genero = 'Feminino'
+#genero = 'Masculino'
 
 for k in range(0,{'Masculino':851, 'Feminino':141}.get(genero),10):
 
@@ -90,7 +90,7 @@ for k in range(0,{'Masculino':851, 'Feminino':141}.get(genero),10):
 
 #		if desde == []:
 #			print(obs)
-		table.append([name, link, birth, field, desde])
+		table.append([name, link, birth, field, desde, nacionalidade])
 #		print (name, link, birth, field, obs)
 		print(birth,desde,obs)
 #	break
