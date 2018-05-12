@@ -8,14 +8,20 @@ ifile.close()
 
 
 ifile = open('lista_abc_masculinos.json')
-tabela=json.loads(ifile.read())
+tabelam=json.loads(ifile.read())
 ifile.close()
 
 ifile = open('lista_abc_femininos.json')
-tabela = tabela + json.loads(ifile.read())
+tabelaf = json.loads(ifile.read())
 ifile.close()
 
+tabela = []
+for p in tabelam:
+	tabela.append(p + ['M'])
 
+for p in tabelaf:
+	tabela.append(p + ['F'])
+	
 tabela_links = sorted (tabela_links, key = lambda p:p[2])
 tabela = sorted (tabela, key = lambda p:p[0])
 
