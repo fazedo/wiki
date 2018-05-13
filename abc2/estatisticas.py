@@ -133,4 +133,13 @@ for i, p in enumerate(nome):
 #f = open('lista_com_dados_do_artigo.json', 'w')
 #json.dump(tabela, f)
 #f.close()
+#name, link, birth, field, desde, nacionalidade, verbete, genero(7), views, numero_de_revisoes, dias_desde_criacao, n_bytes (11), n_links, n_inter
+sorted = sorted(tabela, key = lambda x: ( -x[13]))
 
+k=0
+for nome, link, birth, field, desde, nacionalidade, verbete, genero, views, numero_de_revisoes, dias_desde_criacao, n_bytes, n_links, n_inter  in sorted:
+	if genero == 'F' and 'brasil' in nacionalidade.lower():
+		k=k+1
+		print nome, ', bytes:', n_bytes, ', views: ',views, 'inter:',n_inter
+		if k>5:
+			break

@@ -41,9 +41,10 @@ def get_history(verbete):
 
 	n_bytes=len(page.text)
 	n_links=sum(1 for x in page.extlinks())
-	n_inter=sum(1 for x in page.interwiki())
-	
-	#print(n_inter)
+
+	item =pywikibot.ItemPage.fromPage(page) #pega item no wikidata
+	item.get() 
+	n_inter= len(item.sitelinks)
 	
 	hoje = datetime.strptime('2018-05-01 00:00:00', '%Y-%m-%d %H:%M:%S')
 	tempo =  (hoje - historia[0][1]).total_seconds()  #data da primeira edição
@@ -61,6 +62,10 @@ def get_history(verbete):
 ifile = open('lista_abc_ambos.json')
 tabela = json.loads(ifile.read())
 ifile.close()
+
+#print (get_history('Artur Avila'))
+
+#quit()
 
 nova_tabela=[]
 
@@ -80,7 +85,6 @@ for name, link, birth, field, desde, nacionalidade, genero, verbete in tabela:
 
 	nova_tabela.append([name, link, birth, field, desde, nacionalidade, verbete, genero, views, numero_de_revisoes, dias_desde_criacao, n_bytes, n_links, n_inter])
 
-quit()
 f = open('lista_com_dados_do_artigo.json', 'w')
 json.dump(nova_tabela, f)
 f.close()
