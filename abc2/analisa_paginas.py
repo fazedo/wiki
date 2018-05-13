@@ -18,7 +18,7 @@ def get_views(verbete):
 	url = 'https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/pt.wikipedia/all-access/all-agents/'+verbete+'/monthly/2017050100/2018043000'
 	resposta = requests.get(url, headers={"User-Agent": 'Fabio'} )
 
-	dados=''
+	dados = ''
 	for r in resposta:
 		dados = dados +r
 
@@ -39,20 +39,24 @@ def get_history(verbete):
 	historia=page.getVersionHistory(reverse=True)
 	#print(len(historia)) #número de edições
 
-
-
+	n_bytes=len(page.text)
+	n_links=sum(1 for x in page.extlinks())
+	n_inter=sum(1 for x in page.interwiki())
+	
+	#print(n_inter)
+	
 	hoje = datetime.strptime('2018-05-01 00:00:00', '%Y-%m-%d %H:%M:%S')
 	tempo =  (hoje - historia[0][1]).total_seconds()  #data da primeira edição
 	tempo = int(tempo / (3600*24)) #tempo em dias da criação até 1 de maio de 2018
-	return [len(historia), tempo]
+
+	return [len(historia), tempo, n_bytes, n_links, n_inter]
 
 
 
 
-#[nr, tempo] = get_history('casa')
-#print(tempo)
+#[nr, tempo, n_bytes, n_links] = get_history('casa')
+#print(nr, tempo, n_bytes,n n_links)
 #quit()
-
 
 ifile = open('lista_abc_ambos.json')
 tabela = json.loads(ifile.read())
@@ -66,14 +70,17 @@ for name, link, birth, field, desde, nacionalidade, genero, verbete in tabela:
 		views = 0
 		numero_de_revisoes = 0
 		dias_desde_criacao = 0
+		n_bytes = 0
+		n_links = 0
+		n_inter = 0
 	else:
 		views = get_views(verbete)
-		[numero_de_revisoes, dias_desde_criacao] = get_history(verbete)
-		print(name, verbete, views, dias_desde_criacao)
+		[numero_de_revisoes, dias_desde_criacao, n_bytes, n_links, n_inter] = get_history(verbete)
+		print(name, verbete, views, dias_desde_criacao, n_inter)
 
-	nova_tabela.append([name, link, birth, field, desde, nacionalidade, verbete, genero, views, numero_de_revisoes, dias_desde_criacao])
+	nova_tabela.append([name, link, birth, field, desde, nacionalidade, verbete, genero, views, numero_de_revisoes, dias_desde_criacao, n_bytes, n_links, n_inter])
 
-
+quit()
 f = open('lista_com_dados_do_artigo.json', 'w')
 json.dump(nova_tabela, f)
 f.close()
