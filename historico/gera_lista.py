@@ -31,23 +31,23 @@ lista = json.loads(ifile.read())
 ifile.close()
 
 total = 0
-limiar = 500
+limiar = 50
 novalista=[]
 for nome, contagem, registro in lista:
-	if contagem > limiar:
+	if contagem >= limiar:
 		total = total + 1
 
 n=0
 for nome, contagem, registro in lista:
-	if contagem > limiar:
+	if contagem >= limiar:
 		n = n+1
 		primeira_vez = primeira_edicao(nome)
 		print n, primeira_vez, nome, contagem, registro,'  ',round(100*n/total,2)
 		novalista.append ([primeira_vez, nome, contagem, registro])
 #		break		
-		if primeira_vez == '':
-			break
-f = open('lista_editores_com_primeira.json', 'w')
+#		if primeira_vez == '':
+#			break
+f = open('lista_editores_com_primeira_cinquenta.json', 'w')
 json.dump(novalista, f)
 f.close()
 
