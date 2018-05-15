@@ -15,7 +15,7 @@ lista = json.loads(ifile.read())
 ifile.close()
 
 total = 0
-limiar = 50
+limiar = 500
 
 ano_atual = ''
 lista = sorted(lista, key = lambda p:p[0])
@@ -24,10 +24,17 @@ text = ''
 n=0
 for primeira_vez, nome, contagem, registro in lista:
 	ano=primeira_vez[:4]
+#	if ano =='':
+#		print n		
+		
 	if not ano == ano_atual:
+#		print ano_atual, n
 		print n
 		ano_atual = ano
 		n=0
 	if contagem >= limiar:
 		n = n+1
+#print ano_atual, n
+print n
+ano_atual = ano
 

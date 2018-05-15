@@ -32,7 +32,7 @@ while True:
 	allusers = dados.get('query').get('allusers')
 
 	for p in allusers:
-		if p.get('editcount')>=50:
+		if p.get('editcount')>=0:
 			print p.get('name'), p.get('editcount'), p.get('registration')
 			lista.append ([p.get('name'), p.get('editcount'), p.get('registration')])
 	if aufrom == None:

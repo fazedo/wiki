@@ -26,12 +26,12 @@ def primeira_edicao(usuario):
 #		return datetime.strptime(dados, '%Y-%m-%dT%H:%M:%SZ') # json não gosta de datetime
 	except:
 		return ''
-ifile = open('lista_editores.json')
+ifile = open('lista_editores2.json')
 lista = json.loads(ifile.read())
 ifile.close()
 
 total = 0
-limiar = 50
+limiar = 0
 novalista=[]
 for nome, contagem, registro in lista:
 	if contagem >= limiar:
@@ -47,7 +47,7 @@ for nome, contagem, registro in lista:
 #		break		
 #		if primeira_vez == '':
 #			break
-f = open('lista_editores_com_primeira_cinquenta.json', 'w')
+f = open('lista_editores_com_primeira_um.json', 'w')
 json.dump(novalista, f)
 f.close()
 
