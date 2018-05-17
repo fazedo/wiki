@@ -12,8 +12,16 @@ import urllib
 import ast
 import json
 
+lingua = 'sv'
+limiar = 1
+limiar_max = 100000000
+lista_feminino=False
+verbose = False
+#verbose = True
 
-ifile = open('lista_editores_ativos.json')
+
+
+ifile = open('lista_editores_ativos_' + lingua + '.json')
 lista = json.loads(ifile.read())
 ifile.close()
 
@@ -32,12 +40,7 @@ totalcount = 0
 
 lista_sem_genero=''
 
-limiar = 1
-limiar_max = 100
-
-verbose = False
-#verbose = True
-for nome,  genero, contagem in lista:
+for userid, nome, contagem, registro, genero in lista:
 	if contagem >= limiar and contagem <=limiar_max and not nome in lista_bots:
 		if genero == 'male' or nome in lista_male:
 			male = male + 1
@@ -45,7 +48,8 @@ for nome,  genero, contagem in lista:
 		elif genero == 'female' or nome in lista_female:
 			female = female + 1
 			femalecount = femalecount + contagem
-			print nome
+			if lista_feminino:
+				print nome
 		else: 		#neutro/nao declarou
 			if verbose:
 				print nome, genero, contagem
@@ -58,8 +62,8 @@ print male, female, total-female-male, total
 print 'Declarados:', male + female, 'seja: ', 100*(male + female)/total
 print 'Feminino:', 100*female/(female+male)
 
-print 'Declarados count:', malecount + femalecount, 'seja: ', 100*(malecount + femalecount)/totalcount
-print 'Feminino count:', 100*femalecount/(femalecount+malecount)
-print male, female, total-female-male, total
+#print 'Declarados count:', malecount + femalecount, 'seja: ', 100*(malecount + femalecount)/totalcount
+#print 'Feminino count:', 100*femalecount/(femalecount+malecount)
+#print male, female, total-female-male, total
 
 #open('lista_sem_genero.txt','w').write(lista_sem_genero)
